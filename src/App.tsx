@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./App.scss";
-import Title from "./components/Title";
+import Header from "./components/Header";
+import Dock from "./components/Dock";
 import Container from "./components/Container";
 import Cell from "./components/Cell";
 import Footer from "./components/Footer";
@@ -10,17 +11,17 @@ import Squares from "./components/Squares";
 import Cube from "./components/Cube";
 import Circle from "./components/Circle";
 import Platforms from "./components/Platforms";
-
+  
 const App = () => {
   return (
     <>
-      <Title />
+      <Header />
       <Container>
         <Cell>
           <Hexagon />
         </Cell>
         <Cell>
-          <VoidText />
+          <VoidText text="Void" />
         </Cell>
         <Cell>
           <Squares />
@@ -35,19 +36,10 @@ const App = () => {
           <Platforms />
         </Cell>
         <Cell>
-          
+          <Dock />
         </Cell>
         <Cell>
-          
-        </Cell>
-        <Cell>
-         
-        </Cell>
-        <Cell>
-          
-        </Cell>
-        <Cell>
-          
+          <VoidText text="ENTER" />
         </Cell>
       </Container>
       <Footer />

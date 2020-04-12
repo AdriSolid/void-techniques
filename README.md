@@ -1,6 +1,28 @@
-## Void
+## [Void](https://adrisolid.github.io/Void-techniques/)
 
-Void is a compilation of techniques
+Void is a geometric compilation
+
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+:large_orange_diamond:
+
+<img src="./thumb.png" alt="app-thumb">
 
 ### To run
 

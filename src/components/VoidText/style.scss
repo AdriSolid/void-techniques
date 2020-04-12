@@ -1,8 +1,9 @@
 @import '~styles/mixins';
 
 .void-text {
-    color: var(--color--bg);
     @include animation-definition(voidText 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate);
+    color: var(--color--bg);
+    font-family: 'BladeRunner';
 }
 
 @include keyframes-definition(voidText) {
