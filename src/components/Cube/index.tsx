@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./style.scss";
 
-const Cube = () => (
+const Cube:React.FC = () => (
     <div className="cube-container">
        <div>
         <figure className="back" />

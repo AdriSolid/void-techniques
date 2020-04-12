@@ -10,6 +10,7 @@ import Hexagon from "./components/Hexagon";
 import VoidText from "./components/VoidText";
 import Squares from "./components/Squares";
 import Cube from "./components/Cube";
+import Circle from "./components/Circle";
 
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
           <Cube />
         </Cell>
         <Cell>
-         
+          <Circle />
         </Cell>
         <Cell>
           
@@ -49,27 +50,6 @@ const App = () => {
         </Cell>
         <Cell>
          
-        </Cell>
-        <Cell>
-          
-        </Cell>
-        <Cell>
-          
-        </Cell>
-        <Cell>
-          
-        </Cell>
-        <Cell>
-         
-        </Cell>
-        <Cell>
-          
-        </Cell>
-        <Cell>
-          
-        </Cell>
-        <Cell>
-          
         </Cell>
         <Cell>
           

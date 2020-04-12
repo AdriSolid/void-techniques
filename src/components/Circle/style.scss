@@ -1,0 +1,16 @@
+@import '~styles/mixins';
+
+.circle {
+
+    circle {
+        @include transition-definition(.25s);
+        fill: var(--color--secondary);
+
+        &:hover {
+            @include transition-definition(.5s);
+            stroke: var(--color--bg);
+            stroke-width: 1;
+            fill: transparent;
+        }
+    }
+}
