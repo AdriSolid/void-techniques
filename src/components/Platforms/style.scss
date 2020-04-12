@@ -1,0 +1,25 @@
+@import '~styles/mixins';
+
+$count: 3;
+$duration: 1;
+
+.platforms {
+
+    span {
+        @include animation-definition(wave #{$duration}s infinite alternate);
+        display: inline-block;
+        margin: .25rem;
+    }
+}
+
+@for $i from 0 to $count {
+    .platforms :nth-child(#{$count}n + #{$i}) {
+        @include animation-delay-definition(#{($count - $i) * 2 * $duration / $count }s);
+    }
+}
+
+@include keyframes-definition(wave) {
+    from { transform : translateY(0); }
+    to   { transform : translateY(1.5rem); }
+}
+

@@ -131,6 +131,21 @@
   padding: 5rem;
 }
 
+@mixin keyframes-definition($animationName) {
+  @-webkit-keyframes #{$animationName} {
+      @content;
+  }
+  @-moz-keyframes #{$animationName} {
+      @content;
+  }
+  @-o-keyframes #{$animationName} {
+      @content;
+  }
+  @keyframes #{$animationName} {
+      @content;
+  }
+}
+
 @mixin transition-definition($definition) {
   -moz-transition: $definition;
   -webkit-transition: $definition;
@@ -143,6 +158,13 @@
   -webkit-animation: $definition;
   -o-animation: $definition;
   animation: $definition;
+}
+
+@mixin animation-delay-definition($definition) {
+  -moz-animation-delay: $definition;
+  -webkit-animation-delay: $definition;
+  -o-animation-delay: $definition;
+  animation-delay: $definition;
 }
 
 @mixin transform-definition($definition) {

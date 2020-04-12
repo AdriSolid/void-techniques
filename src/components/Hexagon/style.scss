@@ -12,6 +12,8 @@
   }
 }
 
-@-moz-keyframes hexagon { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes hexagon { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes hexagon { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@include keyframes-definition(hexagon) {
+  100% {
+    @include transform-definition(rotate(360deg));
+  } 
+}

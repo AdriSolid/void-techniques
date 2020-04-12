@@ -5,6 +5,8 @@
     @include animation-definition(voidText 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate);
 }
 
-@-moz-keyframes voidText { to { opacity: 0; } }
-@-webkit-keyframes voidText { to { opacity: 0; } }
-@keyframes voidText { to { opacity: 0; } }
+@include keyframes-definition(voidText) {
+    to {
+        opacity: 0;
+    }
+}

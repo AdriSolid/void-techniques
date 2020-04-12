@@ -2,27 +2,19 @@ import * as React from "react";
 import "./App.scss";
 import Title from "./components/Title";
 import Container from "./components/Container";
-// import Tabs from "./WebsiteComponents/Tabs";
 import Cell from "./components/Cell";
 import Footer from "./components/Footer";
-// import CONFIG from "./config";
 import Hexagon from "./components/Hexagon";
 import VoidText from "./components/VoidText";
 import Squares from "./components/Squares";
 import Cube from "./components/Cube";
 import Circle from "./components/Circle";
+import Platforms from "./components/Platforms";
 
 const App = () => {
   return (
     <>
       <Title />
-      {/* <Container>
-        <Tabs
-          key="tabs"
-          type="tabs"
-          componentInfo={CONFIG.COMPONENTS_INFO}
-        />
-      </Container> */ }
       <Container>
         <Cell>
           <Hexagon />
@@ -40,7 +32,7 @@ const App = () => {
           <Circle />
         </Cell>
         <Cell>
-          
+          <Platforms />
         </Cell>
         <Cell>
           

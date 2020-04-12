@@ -49,19 +49,20 @@
       .right {
         @include animation-definition(rightCubeFace 10s infinite);
       }
-
-      @keyframes rightCubeFace {
-        from {
-          @include transform-definition(rotateY(0deg) translateZ(75px));
-        }
-        
-        to {
-          @include transform-definition(rotateY(360deg) translateZ(75px));
-        }
-      }
       
       .top {
         @include transform-definition(rotateX(135deg) translateZ(75px));
       }
     }
 }
+
+@include keyframes-definition(rightCubeFace) {
+  from {
+    @include transform-definition(rotateY(0deg) translateZ(75px));
+  }
+  
+  to {
+    @include transform-definition(rotateY(360deg) translateZ(75px));
+  }
+}
+
