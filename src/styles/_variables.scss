@@ -1,0 +1,13 @@
+$color-primary: #990099;
+$color-secondary: #99ccff;
+$color-font: #404040;
+$color-bg: #1a1a1a;
+$color-ramp: #ffc6c4,#f4a3a8,#e38191,#cc607d,#ad466c,#8b3058,#672044;
+
+@mixin colors-vars {
+    --color--primary: #{$color-primary};
+    --color--secondary: #{$color-secondary};
+    --color--font: #{$color-font};
+    --color--bg: #{$color-bg};
+    --color--ramp: #{$color-ramp};
+}

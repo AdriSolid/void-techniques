@@ -1,0 +1,18 @@
+@import '~styles/mixins';
+
+.squares {
+
+    div {
+        height: 100px;
+        width: 100px;
+        border: 1px solid #fff;
+
+        &:hover {
+            border-color: var(--color--bg);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+    }
+}

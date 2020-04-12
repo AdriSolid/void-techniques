@@ -1,0 +1,67 @@
+@import '~styles/mixins';
+
+.cube-container {
+  width: 150px;
+  height: 150px;
+  margin: 50px auto;
+  position: relative;
+  perspective: 400px;
+
+  div {
+    @include transform-style-definition(preserve-3d);      
+    width: 100%;
+    height: 100%;
+    position: absolute;
+       
+      figure {
+        @include transition-definition(.5s);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 1px solid var(--color--bg);
+
+        &:hover:not(.right) {
+          @include transition-definition(.5s);
+          background: var(--color--secondary);
+          opacity: .9;
+        }
+      }
+      
+      .back {
+        @include transform-definition(rotateX(45deg) translateZ(-75px));
+      }
+      
+      .left {
+        @include transform-definition(rotateX(135deg) translateZ(-75px));
+      }
+      
+      .bottom {
+        @include transform-definition(rotateX(135deg) translateZ(-75px));
+      }
+      
+      .front {
+        @include transform-definition(rotateX(45deg) translateZ(75px));
+        background: var(--color--secondary);
+        opacity: .5;
+      }
+      
+      .right {
+        @include animation-definition(rightCubeFace 10s infinite);
+      }
+
+      @keyframes rightCubeFace {
+        from {
+          @include transform-definition(rotateY(0deg) translateZ(75px));
+        }
+        
+        to {
+          @include transform-definition(rotateY(360deg) translateZ(75px));
+        }
+      }
+      
+      .top {
+        @include transform-definition(rotateX(135deg) translateZ(75px));
+      }
+    }
+}

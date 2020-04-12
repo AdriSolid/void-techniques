@@ -1,0 +1,27 @@
+@import '~styles/mixins';
+
+.title {
+  @include flex-definition(row, center, center);
+  border-bottom: 1px solid var(--color--font);
+  
+  h2 {
+    @include transition-definition(.5s);
+    @include respond-to(mobile) {
+      font-size: 1rem;
+
+      &:hover:active {
+        @include transition-definition(.5s);
+        letter-spacing: .125rem;
+      }
+    }
+
+    color: var(--color--font);
+    margin: 1rem;
+
+    &:hover {
+      @include transition-definition(.5s);
+      letter-spacing: .5rem;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '~styles/mixins';
+
+.footer {
+    @include flex-definition(row, center, center);
+    @include respond-to(mobile) {
+        font-size: .6rem;
+    }
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    left: 0;
+    bottom: 0;
+    color: var(--color--font);
+    background: var(--color--bg);
+    font-size: .8rem;
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+@import '~styles/mixins';
+
+.cell {
+  @include flex-definition(column, center, center);
+  @include transition-definition(.5s);
+  height: 250px;
+  width: 250px;
+  border: 1px solid var(--color--bg);
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+      @include transition-definition(.5s);
+      background: var(--color--primary);
+  }
+}

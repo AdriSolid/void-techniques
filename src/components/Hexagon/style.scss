@@ -1,0 +1,17 @@
+@import '~styles/mixins';
+
+.hexagon {
+  cursor: pointer;
+  fill: transparent;
+  stroke: var(--color--bg);
+  stroke-width: 1;
+  transform-origin: 50% 50%;
+
+  &:hover {
+    @include animation-definition(hexagon 4s linear infinite);
+  }
+}
+
+@-moz-keyframes hexagon { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes hexagon { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes hexagon { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

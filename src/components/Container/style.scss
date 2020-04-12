@@ -1,0 +1,10 @@
+@import '~styles/mixins';
+
+.container {
+  @include grid-definition(250px, 250px);
+  @include justify(center);
+  height: calc(100vh - 275px);
+  color: #fff;
+  background: transparent;
+  overflow-y: auto;
+}
