@@ -1,13 +1,14 @@
 {
-  "main.css": "/Void-techniques/static/css/main.82fa0acb.chunk.css",
-  "main.js": "/Void-techniques/static/js/main.e56b94a6.chunk.js",
-  "main.js.map": "/Void-techniques/static/js/main.e56b94a6.chunk.js.map",
+  "main.css": "/Void-techniques/static/css/main.359fac72.chunk.css",
+  "main.js": "/Void-techniques/static/js/main.8988db7b.chunk.js",
+  "main.js.map": "/Void-techniques/static/js/main.8988db7b.chunk.js.map",
   "runtime~main.js": "/Void-techniques/static/js/runtime~main.508dec03.js",
   "runtime~main.js.map": "/Void-techniques/static/js/runtime~main.508dec03.js.map",
   "static/js/2.4005688b.chunk.js": "/Void-techniques/static/js/2.4005688b.chunk.js",
   "static/js/2.4005688b.chunk.js.map": "/Void-techniques/static/js/2.4005688b.chunk.js.map",
   "index.html": "/Void-techniques/index.html",
-  "precache-manifest.d6dffc64c2228b4a4fc25247553b4858.js": "/Void-techniques/precache-manifest.d6dffc64c2228b4a4fc25247553b4858.js",
+  "precache-manifest.3d31c1b0e56ed8234088a9fd35ec1327.js": "/Void-techniques/precache-manifest.3d31c1b0e56ed8234088a9fd35ec1327.js",
   "service-worker.js": "/Void-techniques/service-worker.js",
-  "static/css/main.82fa0acb.chunk.css.map": "/Void-techniques/static/css/main.82fa0acb.chunk.css.map"
+  "static/css/main.359fac72.chunk.css.map": "/Void-techniques/static/css/main.359fac72.chunk.css.map",
+  "static/media/App.scss": "/Void-techniques/static/media/BLADRMF_.85801fcc.TTF"
 }
